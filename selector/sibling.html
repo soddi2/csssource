@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자</title>
+    <style>
+        /* div h1 + h2{ (+)는 인접형제중 첫번째만 선택
+            color: chocolate;
+        } */
+        
+        /* 인접형제 모두 선택*/
+        div h1 ~ h2{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>css 기본문법</h1>
+        <h2>형제 선택자</h2>
+        <h2>형제 선택자</h2>
+    </div>
+    <nav>
+        <h2>제목</h2>
+    </nav>
+</body>
+</html>

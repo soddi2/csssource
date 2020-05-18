@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        li > a{
+            background-image: url("../images/tab_sprites.gif");
+            width: 108px;
+            height: 32px;
+            display: block;
+            text-indent: -9999em;
+        }
+        ul > li:nth-child(2) a{
+            background-position: -107 top;
+        }
+        ul > li:nth-child(3) a{
+            background-position: -214 top;
+        }
+        /* 마우스를 올리면 다른 이미지로 대체 */
+        ul > li:nth-child(1) a:hover {
+            background-position: 0px -32px;
+        }
+        ul > li:nth-child(2) a:hover {
+            background-position: -107px -32px;
+        }
+        ul > li:nth-child(3) a:hover {
+            background-position: -214px -32px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">스타</a></li>
+        <li><a href="#">프로그램</a></li>
+        <li><a href="#">이슈</a></li>
+    </ul>
+</body>
+</html>

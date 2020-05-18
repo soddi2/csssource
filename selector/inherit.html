@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  상속 : 글자를 다루는 속성이 주로 상속됨 */
+        .ecosystem{
+            color: lightcoral;
+        }
+
+        .area p{
+            color: lightyellow ;
+        }
+
+        /* p{
+            color:orange !important;
+            } */
+            p{color: blanchedalmond;}
+    </style>
+</head>
+<body>
+    <div class="ecosystem">
+        <div class="animal">
+            동물
+            <div class="tiger">호랑이</div>
+            <div class="lion">사자</div>
+            <div class="elephant">코끼리</div>
+        </div>
+        <div class="plant">식물</div>
+    </div>
+    <div class="area">
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio totam labore illo fugiat odit obcaecati, exercitationem saepe expedita fugit quibusdam sit temporibus placeat ab ea maiores commodi dignissimos repellendus?
+        </p>
+    </div>
+</body>
+</html>
+
+<!-- css 우선순위 
+1.명시도 점수가 높은 선언이 우선
+(!important > 인라인 선언 > 아이디 > 클래스(가상클래스) > 태그(가상요소) > 전체 > 상속) 
+2.점수가 같은 경우 마지막 우선
+3.명시도는 상속 규칙보다 우선
+4.!important가 적용된 방식이 최우선
+-->

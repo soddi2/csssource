@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul :nth-of-type(1){
+            padding: 0;
+        }
+
+        p{
+            padding: 10px;
+        }
+        
+        ul{
+            background-color: #333;
+        }
+
+        a {
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        ul li:hover {
+            color: blueviolet;
+        }
+
+        div li{
+            list-style: none;
+            float: left;
+            background-color: burlywood;
+        }
+
+        div li:hover{
+            color: cyan;
+            background-color: darkred;
+        }
+
+        /* nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            line-height: 60px;
+            margin-left: 20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        li:hover{
+            background-color: darkred;
+        } */
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        } /* float 해제 */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">login</a></li>
+            <li><a href="#">join</a></li>
+            <li><a href="#">sitemap</a></li>
+            <li><a href="#">location</a></li>
+        </ul>
+        <p></p>
+        <div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </div>
+    </nav>
+</body>
+</html>

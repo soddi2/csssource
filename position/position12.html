@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .html5news-slide{
+            border: 2px solid green;
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+        .html5news-slide img{
+            float: left;
+            height: 300px;
+            width: 500px;
+            
+        }
+        .controls a{
+            background-color: #333;
+            line-height: 50px;
+            color: #fff;
+            display: block;
+            white-space: nowrap; /*스페이스바를 엔터개념으로*/
+            text-align: center;
+            position: absolute;
+            top: calc(50%-25px);
+        }
+        .prev{
+            right: 100%;
+        }
+        .next{
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="html5news-slide">
+        <img src="https://t1.daumcdn.net/liveboard/gameabout/367608094338425382150c9575318db5.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum eos quo consectetur ratione aperiam optio totam cum est? Libero quod beatae distinctio doloremque error consequatur excepturi pariatur velit nesciunt soluta?
+        </p>
+        <div class="controls">
+            <a href="#" class="prev">Precious Project</a>
+            <a href="#" class="next">Next Project</a>
+        </div>
+    </div>
+</body>
+</html>

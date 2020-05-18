@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: row-reverse;
+            border: 3px solid;
+        }
+        .container .box{
+            width: 33.3%;
+            height: 100px;
+        }
+        .container div:first-child{
+            background-color: red;
+        }
+        .container div:nth-child(2){
+            background-color: blue;
+        }
+        .container div:last-child{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>     
+</body>
+</html>

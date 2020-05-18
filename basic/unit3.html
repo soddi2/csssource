@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-size: 12px;
+        }
+        body{
+            font-size: 13px;
+        }
+        .box{
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+        .box_px{
+            width: 160px;
+            height: 160px;
+        }
+        .box_em{
+            width: 10em;
+            height: 10em;
+        }
+        .box_rem{
+            width: 10rem;
+            height: 10rem;
+        }
+        p{
+            background-color: cadetblue;
+            font-size: 1em;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <!-- px : 고정값(화면 해상도에 영향을 받음)
+        % : 부모 요소에 영향을 받음
+        em : 자기 자신의 font size 에 영향을 받음
+        rem : 조상 태그의 font size에 영향을 받음
+        vw, vh : viewprot 기준으로 width, height 설정
+        viewprot : 브라우저가 제공하는 화면 크기
+    -->
+    <h1>CSS 기본 문법</h1>
+    <h2>단위</h2>
+    <div class="wrapper">
+        <div class="box box_px">px</div>
+        <div class="box box_em">em</div>
+        <div class="box box_rem">rem</div>
+    </div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quos eos, voluptas eaque eligendi molestias earum. Ratione quis harum, perferendis porro laudantium deleniti earum natus praesentium veniam similique, a perspiciatis.
+    </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

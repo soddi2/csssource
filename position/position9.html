@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: thistle;
+        position: relative;
+      }
+
+      .box {
+        height: 100px;
+        position: absolute; /* 부모를 기준으로 위치를 지정하는 형태 */
+      }
+
+      .a {
+        background-color: teal;
+        right: 100%;
+        top: 100px;
+      }
+
+      .b {
+        background-color: yellowgreen;
+        left: 200px;
+        top: 100px;
+      }
+
+      .c {
+        background-color: darkgoldenrod;
+        left: 500px; /*100px 500px*/
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaa</div>
+      <div class="box b">box b</div>
+      <div class="box c">box c</div>
+    </div>
+  </body>
+</html>

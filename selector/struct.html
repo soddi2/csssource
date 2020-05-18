@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 선택자</title>
+    <style>
+        /* li:first-child{
+            text-decoration: underline;
+        }
+        li:last-child{
+            text-decoration: underline;
+        }
+        li:nth-child(3){
+            text-decoration: underline;
+        } */
+        /* li:nth-child(2n){
+            text-decoration: underline;
+        }
+        li:nth-child(2n + 1){
+            background-color: yellowgreen;
+        } */
+        /* li:nth-child(-n + 3){
+            background-color: darkolivegreen;
+        } */
+        li:nth-child(n+4){
+            background-color: paleturquoise;
+        }
+        .fruits p:nth-child(2){
+            color: rebeccapurple;
+        }
+        .box-group div:first-child{
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>css 기본문법</h1>
+    <h2>구조 선택자</h2>
+    <ul>
+        <!-- <li><u>리스트 아이탬</u></li> -->
+        <li>리스트 아이탬</li>
+        <li>리스트 아이탬</li>
+        <li>리스트 아이탬</li>
+        <li>리스트 아이탬</li>
+        <li>리스트 아이탬</li>
+    </ul>
+    <ul class="fruits">
+        <div>딸기</div>
+        <p>사과</p>
+        <p>오렌지</p>
+        <span>망고</span>
+    </ul>
+    <div class="box_group">
+        <div>1</div>
+        <div>2</div>
+        <div>3
+            <p>3-1</p>
+            <p>3-2</p>
+            <p>3-3</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

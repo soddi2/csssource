@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        [href]{
+            text-decoration: none;
+        }
+        [target="_blank"]{
+            /* text-decoration: none; */
+            background-color: blanchedalmond;
+            color: blue;
+        }
+        [target="_self"]{
+            /* text-decoration: none; */
+            background-color: darkolivegreen;
+            color: indigo;
+        }
+        .link1,
+        .link2{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>css 기본문법</h1>
+    <h2>속성</h2> 선택자</h2>
+    <ul>
+        <li><a href="#" target="_blank" class="link1">google</a></li>
+        <li><a href="#" target="_blank" class="link1">daum</a></li>
+        <li><a href="#" target="_self" class="link2">naver</a></li>
+    </ul>
+</body>
+</html>

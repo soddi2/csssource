@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: lemonchiffon;
+        }
+        .content img{
+            float: left;
+            margin-right: 10px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>float 속성을 이용한 이미지 배치</h1>
+    <div class="content clearfix">
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+    </div>  
+    <div>
+        <h1>float 속성 해지</h1>
+    </div>
+</body>
+</html>

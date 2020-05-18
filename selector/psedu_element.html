@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        h1::before{
+            content: "before ";
+            color: gold;
+        }
+        h1::after{
+            content: " after";
+            color: paleturquoise;
+        }
+        h2::before{ /* : => 사용가능, 표준은 :: */
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: greenyellow;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>css 기본문법</h1>
+    <h2>가상 요소 선택자</h2>
+    <ul>
+        <li><a href="#" target="_blank" class="link1">google</a></li>
+        <li><a href="#" target="_blank" class="link1">daum</a></li>
+        <li><a href="#" target="_self" class="link2">naver</a></li>
+    </ul>
+</body>
+</html>

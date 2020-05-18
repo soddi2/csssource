@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{           
+            display: flex;  
+            flex-wrap: wrap;         
+            align-content: space-around;
+            height: 400px;
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            border: 4px dashed;
+            font-size: 40px;
+            display: flex;
+            justify-content: center; /*가로정렬*/
+            align-items: center; /*세로정렬*/
+        }
+        .container div:first-child{
+            background-color: red;
+        }
+        .container div:nth-child(2){
+            background-color: blue;
+        }
+        .container div:nth-child(3){
+            background-color: green;
+        }
+        .container div:nth-child(4){
+            background-color: magenta;
+        }
+        .container div:last-child{
+            background-color: yellow;
+        }
+
+        /* 
+        display : flex
+        flex-direction : row(기본) 아이탬 진행 방향 바꿈
+        flex-wrap : no-wrap(기본) 아이탬 줄바꿈
+        justify-content: stretch(기본) 교차축의 정렬방법
+        (flex-wrap : wrap(기본) 이어야 의미가 있으며 여백이 있는 경우만 동작)
+        align-items : stretch(기본) 한줄 일때 정렬 방법
+        
+        flex-flow : row wrap(flex-direction과 flex-wrap 한꺼번에 쓰는 경우)
+        */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>     
+</body>
+</html>

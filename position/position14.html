@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-group{
+            display: flex;
+        }
+        .box-group .box{
+            width: 100px;
+            height: 100px;
+            background-color: maroon;
+            border: 4px dashed green;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -30px;
+        }
+        .box-group .box:nth-child(2n){
+            margin-top: 30px;
+        }
+        .box4{ 
+            /* 포지션을 준 아가가 먼저 올라옴 */
+            position: relative;
+        }
+        /* 5번 박스 보다는 위에 있는 상태
+            position이 있다면 없는 것보다는 위에 쌓이게 됨
+
+            3,4번 박스는 똑같은 포지션 값을 가졌기 떄문에 
+            html 작성 순서에 의해 우선순위가 부여됨
+         */
+        .box3{
+            position: relative;
+            z-index: 1; /*숫자가 높을 수록 위에 쌓임*/
+        }
+        .box5{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-group">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+</html>

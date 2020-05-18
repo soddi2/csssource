@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            width: 960px;
+            background-color: #666;
+            line-height: 60px;
+        }
+
+        header h1{
+            float: left;
+        }
+
+        header nav{
+            float: right;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        } /* float 해제 */
+
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <h1><a href="">logo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#">login</a></li>
+                <li><a href="#">join</a></li>
+                <li><a href="#">sitemap</a></li>
+                <li><a href="#">location</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

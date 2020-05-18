@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .portfolio{
+            width: 960px;
+            margin: 100px auto;
+            background-color: darkgreen;
+            /* display: inline-flex;  */
+        }
+        .portfolio li {
+            /* box-sizing: border-box;  */
+            width: 225px;
+            height: 255px;
+            background-color: lightsalmon;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            list-style: none;
+            float: left;
+        }
+        .portfolio li:nth-child(4n){
+            margin-right: 0;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        } /* float 해제 */
+    </style>
+</head>
+<body>
+    <ul class="portfolio clearfix">
+        <li>pic1</li>
+        <li>pic2</li>
+        <li>pic3</li>
+        <li>pic4</li>
+        <li>pic5</li>
+        <li>pic6</li>
+        <li>pic7</li>
+        <li>pic8</li>
+        <li>pic9</li>
+        <li>pic10</li>
+        <li>pic11</li>
+        <li>pic12</li>
+    </ul>
+</body>
+</html>
